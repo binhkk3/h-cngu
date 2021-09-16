@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt("nhập điểm kiểm tra"))
+    let b = parseInt(prompt("nhập điểm giữa kỳ"))
+    let c = parseInt(prompt("nhập ddierm cuối kỳ"))
+    let d = 0
+    d=((a +b*2+c*3)/6)
+    document.write(d+" "+"là điểm tông kết" )
+    if(d>8){
+        document.write("là học sinh giỏi")
+    }
+    else if(d>6.5){
+        document.write("là học sinh khá")
+    }
+    else if(d>5){
+        document.write("là học sinh trung bình")
+    }
+    else document.write("học ngu quá")
+</script>
+
+</body>
+</html>

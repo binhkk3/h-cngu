@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phương trinh bac 1</title>
+</head>
+<input type="text" id="vao" placeholder="nhập vào a">
+<input type="text" id="vao1" placeholder="nhap vào b">0
+<button onclick="binh()">tinh an</button>
+<h1 id="kqua"></h1>
+<body>
+<script>
+    function binh() {
+        let a = document.getElementById('vao').value;
+        let b = document.getElementById('vao1').value;
+        let binh1;
+        if(a==0 && b==0){
+            binh1 = "pt vô số nghiệm"
+        }
+        if  (a == 0 && b!= 0){
+            binh1 = "pt vô nghiệm"
+        }
+        if(a != 0&& b != 0){
+            binh1 = -b/a
+        }
+        document.getElementById('kqua').innerHTML = binh1;
+    }
+</script>
+
+</body>
+</html>

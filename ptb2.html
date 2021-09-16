@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pt bâc 2</title>
+</head>
+<input type="text" id="a" placeholder="nhập vào số a">
+<input type="text" id="b" placeholder="nhập vào b">
+<input type="text" id="c" placeholder="nhâp vào c">
+<button onclick = "nhan()" > giai</button>
+<h1 id="dapan" id="dapan2"></h1>
+<body>
+<script>
+    function nhan(){
+        let a= document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        let c = document.getElementById('c').value;
+        let d;
+        let x1;
+        let x2;
+        if(a == 0 && b==0 && c==0){
+            d = "pt vô số nghiệm";
+        }
+        else if  ( a==0 && b!=0 || c != 0){
+            d = "đây  là pt bậc 1 tôi không giải"}
+             else if (a != 0 && b == 0 ){
+              d = math.sqrt(c/a)
+             }
+               let z = (b*b - (4*a*c))
+               if (a != 0 && b !=0 && c != 0){
+                if (z=0){
+                d = -(b/(2*a))
+               }
+                else if(z>0){
+                d =(-b +math.sqrt (z))/(2*a)
+                d =(-b - math.sqrt(z))/(2*a)
+                document.getElementById('dapan').innerHTML= d;
+                document.getElementById('dapan').innerHTML= d;
+            }
+        }
+        document.getElementById('dapan').innerHTML = d;
+    }
+</script>
+
+</body>
+</html>
